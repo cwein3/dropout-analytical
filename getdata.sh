@@ -24,13 +24,6 @@ mv wiki.valid.tokens valid.txt
 mv wiki.test.tokens test.txt
 cd ..
 
-echo "- Downloading enwik8 (Character)"
-mkdir -p enwik8
-cd enwik8
-wget --continue http://mattmahoney.net/dc/enwik8.zip
-python prep_enwik8.py
-cd ..
-
 echo "- Downloading Penn Treebank (PTB)"
 wget --quiet --continue http://www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz
 tar -xzf simple-examples.tgz
